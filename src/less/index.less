@@ -1,0 +1,159 @@
+// 定义变量
+@colorwhite:#fff;
+@colorblue:#00a8ff;
+@color2e8ece:#2e8ece;
+
+li{
+    list-style: none;
+}
+
+
+// 顶部导航
+
+.navbar-inverse {
+    margin-bottom: 0px;
+    border-radius: 0px;
+    .navbar-brand {
+        color:@colorwhite;
+        font-size: 22px;
+        font-style: italic;
+        span{
+            margin-right: 5px;
+            font-size: 16px;
+        }
+    }
+
+    .navbar-nav>li{
+        &>a{
+            color:@colorwhite;
+            &:hover{
+                color:@colorblue;
+                text-decoration: underline;
+
+           
+            }
+        }
+        .tooltip img{
+            width: 100px;
+        }
+    }
+}
+
+
+// 主导航
+.navbar-default{
+    margin-bottom: 5px;
+   .navbar-nav{
+       li{
+        &>a{
+            line-height: 40px;
+            font-size: 16px;
+            text-align: center;
+            &:hover{
+                color:@colorblue;
+                background-color: #f0f0f0;
+            }
+        }
+       }
+   }
+}
+
+// 轮播图
+
+
+// 三大特色
+
+#three-feature{
+    // padding: 0px;
+    .feature{
+        margin:20px auto;
+        height: 65px;
+        &>div{
+            padding: 0px;
+        }
+        .feature1{
+            background: url(../../images/feature01.png) no-repeat;   
+        }
+        .feature2{
+            background: url(../../images/feature02.png) no-repeat;
+        }
+        .feature3{
+            background: url(../../images/feature03.png) no-repeat;
+        }
+        .feature1, .feature2, .feature3{
+        
+            padding-left: 80px;
+        }
+        dt{
+            font-size: 18px;
+        }
+        dd{
+            color: #999;
+            margin-top: 5px;
+        }
+    }
+}
+
+
+//面板样式重置
+.panel{
+    border:none;
+    box-shadow: none;
+    .panel-heading {
+        background-color: transparent;
+        border-radius: 0px; 
+        padding: 0px;
+        border: none;
+        border-bottom: solid 1px #ddd;
+        h3{
+            margin: 0px;
+            font-size: 24px;
+            font-weight: bold;
+            color:#2e8ece;
+            padding: 10px 0px;
+            border-bottom:4px solid #2e8ece;
+        }
+        a{
+            margin-top: 20px;
+        }
+    }
+    .panel-body{
+        padding:0px;
+        border-bottom:none;
+        table{
+            margin: 0px;
+            line-height: 30px;
+        }
+        ul{
+            padding: 0px;
+            li{
+                border-bottom:dashed 1px #ddd; 
+                a{
+                    line-height: 40px;
+                    color: #555;
+                    &:hover{
+                        color:@colorblue;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//小屏列表无法阅读功能
+@media all and(max-width:520px){
+    .hiddenTitle{
+        display: none;
+    }
+}
+
+//页脚
+footer{
+    background-color: #f8f8f8;
+    margin: 20px 0px 20px 0px;
+    padding-top: 30px;
+    .row{
+        margin: 0 auto;
+    }
+}
