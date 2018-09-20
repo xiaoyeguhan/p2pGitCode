@@ -1,0 +1,17 @@
+id
+用户名 username
+密码 password
+昵称 nickname
+姓名 realname
+性别 sex
+手机号码 phone
+身份证 idnumber
+联系电话 tel
+email
+学历 education
+收入  monthlyincome
+地址 address
+注册日期 createdate
+是否审核 ischeck
+最后登录日期 lastlogindate
+登录次数 logincount

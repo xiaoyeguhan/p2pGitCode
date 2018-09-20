@@ -16,6 +16,9 @@ let livereload=require('gulp-livereload');
 //压缩js
 let uglify=require('gulp-uglify');
 
+//引入gulp-babel
+let babel = require('gulp-babel');
+
 //引入路径模块
 let path=require('path');
 
@@ -38,6 +41,9 @@ gulp.task('lessTask',()=>{
 //压缩js
 gulp.task('jsTask',()=>{
     gulp.src('./src/js/*.js')
+    .pipe(babel({
+        presets: ['@babel/env']
+    }))
     .pipe(uglify())
     .pipe(rename(function(path){
         path.basename+='.min';

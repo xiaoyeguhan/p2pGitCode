@@ -1,0 +1,63 @@
+// 定义变量
+@colorwhite:#fff;
+@colorblue:#00a8ff;
+@color2e8ece:#2e8ece;
+
+li{
+    list-style: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+// 顶部导航
+
+.navbar-inverse {
+    margin-bottom: 0px;
+    border-radius: 0px;
+    .navbar-brand {
+        color:@colorwhite;
+        font-size: 22px;
+        font-style: italic;
+        span{
+            margin-right: 5px;
+            font-size: 16px;
+        }
+    }
+
+    .navbar-nav>li{
+        &>a{
+            color:@colorwhite;
+            &:hover{
+                color:@colorblue;
+                text-decoration: underline;
+
+           
+            }
+        }
+        .tooltip img{
+            width: 100px;
+        }
+    }
+}
+
+
+// 主导航
+.navbar-default{
+    margin-bottom: 5px;
+   .navbar-nav{
+       li{
+        &>a{
+            line-height: 40px;
+            font-size: 16px;
+            text-align: center;
+            &:hover{
+                color:@colorblue;
+                background-color: #f0f0f0;
+            }
+        }
+       }
+   }
+}

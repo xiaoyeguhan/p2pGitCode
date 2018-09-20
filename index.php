@@ -9,51 +9,10 @@
     <link rel="stylesheet" href="./dist/css/index.min.css">
 </head>
 <body>
-    <!-- 顶部导航 -->
-    <nav class="navbar navbar-inverse">
-     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-phone-alt"></span>028-86261949</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">首页</a></li>
-              <li><a href="#">小强</a></li>
-              <li><a href="#">赶快充值</a></li>
-              <li><a href="#">注销</a></li>
-              <li><a href="#">帮助</a></li>
-              <li><a href="#" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<img src='./images/contract.png'/>">联系客服</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-     </div><!-- /.container-fluid -->
-    </nav>
-
-    <!-- 主导航 -->
-    <nav class="navbar  navbar-default">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="网站logo"></a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">首页</a></li>
-            <li><a href="#">我要投资</a></li> 
-            <li><a href="#">我要借款</a></li> 
-            <li><a href="#">个人中心</a></li> 
-            <li><a href="#">新手指引</a></li> 
-            <li><a href="#">关于我们</a></li> 
-      </div><!-- /.container-fluid -->
-    </nav>
+    <!-- 头部 -->
+    <?php
+      require_once('./header.php');
+    ?>
 
     <!-- 轮播图 -->
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -228,29 +187,12 @@
     </div>
 
     <!-- 页尾 -->
-    <footer>
-      <div class="row container">
-        <div class="col-xs-12 col-sm-8">
-          <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
-          <p>版权所有：&emsp;2006-2015成都源代码教育咨询有限公司</p>
-          <p>地&emsp;&emsp;址：&emsp;成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
-          <p>电&emsp;&emsp;话： 028-86261949  / 400-808-6840&emsp;&emsp;邮箱：&emsp;yuandaima@itsource.cn</p>
-          <p><a href="">蜀ICP备14030149号-1</a>&emsp;&emsp;<a href="">蜀公网安备510114990541</a></p>
-        </div>
-        <div class="col-xs-12 col-sm-2 Fcenter">
-          <p>官方微博：</p>
-          <p><a href=""><img class="img-responsive"  src="./images/tecent.png" alt=""></a></p>
-          <p><a href=""><img class="img-responsive"  src="./images/sina.png" alt=""></a></p>
-        </div>
-        <div class="col-xs-12 col-sm-2 Fright">
-          <p>官方微信：</p>
-          <p><a href=""><img class="img-responsive"  src="./images/wx.jpg" alt=""></a></p>
-        </div>
-      </div>
-    </footer>
+    <?php 
+      require_once('./footer.php');
+    ?>
 
     <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./dist/js/index.min.js"></script>
+    <script src="./dist/js/p2p.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,103 @@
+// 引入页头样式
+@import url("./header.less");
+
+//左侧导航样式
+
+@import url("./sidebar.less");
+
+//右侧
+#rightContent{
+    #tagOnOff{
+        display:none;
+    }
+    .panel{
+        box-shadow: none;
+        padding: 0px 10px;
+        .panel-heading{
+            background-color: transparent;
+            .img{
+                padding-left: 0px;
+                img{
+                    // margin: 0px auto;
+                    max-width: 80px;
+                }
+            }
+            .textContent{
+                padding-left: 0px;
+            }
+        }
+        .panel-body{
+         
+           .row{
+               &>div{
+                   margin-bottom: 30px;
+               }
+               h4{
+                   margin: 0px;
+                   span{
+                       color:#337ab7;
+                   }
+               }
+               
+              
+           }
+           .recharge{
+                text-align:center;
+                margin-bottom: 30px;
+            } 
+           .attestation{
+               .att-content{
+                   &>div{
+                       margin-bottom: 15px;
+                   }
+                   .text{
+                       margin: 0px;
+                       padding-left: 0px;
+                       h5{
+                           margin: 0px;
+                           font-weight: bold;
+                           font-size: 16px;
+                       }
+                       p{
+                           margin: 10px 0px 0px;
+                       }
+                   }
+               }
+           }
+        }
+    }
+}
+
+//在小屏和超小屏下显示效果
+@media all and(max-width:768px){
+    #parent{
+        height: 1000px;
+        
+        position: relative;
+        left: 0px;
+        transition: all 0.7s;
+        #leftMune{
+            position: absolute;
+            left: 0px;
+        }
+
+        #rightContent{
+            position: absolute;
+            right: -50%;
+            #tagOnOff{
+                display: inline-block; 
+                position: absolute;
+                top: 0px;
+                 z-index: 1000;
+            }
+        }
+    }
+    #parent.active{
+        left: -50%;
+    }
+}
+    
+
+
+// 引入页脚
+@import url("footer.less");
