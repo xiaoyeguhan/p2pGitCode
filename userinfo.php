@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>个人资料</title>
+    <!-- 引入 bootstrap框架样式-->
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
     <!-- 引入 bootstrapValidator样式-->
     <link rel="stylesheet" href="./lib/bootstrapValidator/css/bootstrapValidator.min.css">
+    <!-- 引入自定义样式 -->
     <link rel="stylesheet" href="./dist/css/userinfo.min.css">
+    <!-- 引入jquery库文件 -->
     <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- 引入请求状态文件 -->
     <script src="./dist/js/checkUserState.min.js"></script>
-
 </head>
 <body>
     <!-- 头部 -->
@@ -106,8 +109,6 @@
                                 </div>
                             </div>
                         </form>
-
-
                     </div>
                 </div>
             </div>
@@ -118,10 +119,12 @@
    <?php 
       require_once('./footer.php');
     ?>
-
+    <!-- 引入 bootstrap框架样式-->
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- 引入 bootstrapValidator插件库 -->
     <script src="./lib/bootstrapValidator/js/bootstrapValidator.min.js"></script>
-    <script src="./dist/js/index.min.js"></script>
+    <script src="./dist/js/p2p.min.js"></script>
+    <!-- 表单验证及回填数据 -->
     <script src="./dist/js/userinfo.min.js"></script>
     <!-- 回填 用户名-->
     <script>

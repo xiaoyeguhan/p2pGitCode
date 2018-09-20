@@ -38,7 +38,7 @@ $(window).on('touchend',function(e){
 
 
 
-//回填昵名 和  用户名
+//回填昵名和用户名
 $.get('./api/getname.php',function(data){
         // console.log(data);
         $('#realneme').text(data[0].realname);

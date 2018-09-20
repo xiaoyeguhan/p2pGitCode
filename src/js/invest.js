@@ -2,7 +2,7 @@ $(function(){
     //配置分页参数
     $("#page").page({
         debug: true,
-        showInfo: true,
+        showInfo: false, 
         pageSize:5,
         showJump: true,
         showPageSizes: true,

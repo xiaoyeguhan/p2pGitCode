@@ -18,11 +18,10 @@
     <?php
       require_once('./header.php');
     ?>
-   
+   <!-- 内容 -->
    <div class="container">
        <h4>投资列表</h4>
-        <!-- 按钮组 -->
-
+       <!-- 切换状态 -->
         <form action="invest_list.html" id="searchForm">
 			<div style="margin: 20px 0px;">
 					<span class="text-muted">标的状态</span><div style="margin-left: 30px" class="btn-group" data-toggle="buttons">
@@ -75,7 +74,7 @@
     <!-- 引入jquery template模板 -->
     <script src="./lib/jqueryTemplate/jquery.tmpl.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./dist/js/index.min.js"></script>
+    <script src="./dist/js/p2p.min.js"></script>
      <!-- 定义模板 -->
      <script type="text/html" id="dataTempl">
         <tr>

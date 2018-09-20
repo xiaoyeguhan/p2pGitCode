@@ -11,17 +11,19 @@
           <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-phone-alt"></span>028-86261949</a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
+        
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
               <li id="homePage"><a href="./index.php?muneId=0">首页</a></li>
               <li><a href="#">帮助</a></li>
               <li><a href="#" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<img src='./images/contract.png'/>">联系客服</a></li>
           </ul>
-        </div><!-- /.navbar-collapse -->
-     </div><!-- /.container-fluid -->
-    </nav>
+        </div>
+     </div>
+</nav>
+    <!-- 引入jquery -->
     <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- 顶部导航栏登录前与登录后的状态切换 -->
     <script>
       $.get('./api/checkState.php',(data)=>{
           if(data.isSuccess){

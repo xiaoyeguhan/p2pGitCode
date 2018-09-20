@@ -1,4 +1,5 @@
 <?php
+    /* 检测用户是否登录 */
     session_start();
     if(isset($_SESSION['username'])){
         $resultArr=["isSuccess"=>true,"message"=>"登录成功!","username"=>$_SESSION['username']];

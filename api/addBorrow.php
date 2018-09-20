@@ -24,6 +24,7 @@
     //执行sql语句
     $result=mysqli_query($link, $inSql);
 
+    //根据结果返回相应数据前端
     if($result){
         $resultArr=["isSuccess"=>true,"message"=>"提交数据成功!"];
         echo json_encode($resultArr);

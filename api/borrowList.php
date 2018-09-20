@@ -10,12 +10,16 @@
 
     //执行sql语句
     $result=mysqli_query($link,$sql);
+
     //定义数组
     $resultData=[];
+
     //遍历结果集
     while($rs=mysqli_fetch_assoc($result)){
         array_push( $resultData,$rs);
     };
+
+    //返回数据
     echo json_encode($resultData);
 
     //关闭连接

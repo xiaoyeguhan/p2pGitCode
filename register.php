@@ -28,7 +28,7 @@
         </div>
       </div><!-- /.container-fluid -->
     </nav>
-
+    <!-- 注册表单内容 -->
     <div class="container ">
         <div class="panel panel-default">
             <div class="panel-heading">用户注册</div>

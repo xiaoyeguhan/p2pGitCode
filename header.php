@@ -24,6 +24,8 @@
       </div><!-- /.container-fluid -->
     </nav>
     <script src="./lib/jquery/jquery.min.js"></script>
+
+    <!-- 导航栏状态切换 -->
     <script>
       let urlId=location.href.split('=')[1];
       $('#mainMune li').eq(urlId).addClass('active').siblings('li').removeClass('active');

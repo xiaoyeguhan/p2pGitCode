@@ -1,15 +1,21 @@
 // 引入页头样式
 @import url("header.less");
 
-//借款申请表单样式
+//借款申请信息样式
 .el-tip-info{
     padding:20px;
     background-color: #F4F8FA;
     border-left: 2px solid #0099DD;
     margin-bottom: 20px;
-}
-.el-tip-info h3{
-    color:#09d;
+    h3{
+        color:#09d;
+    }
+    .text-info{
+        color: #31708f;
+    }
+    .text-danger {
+        color: #a94442;
+    }
 }
 
 #borrowForm{
@@ -17,8 +23,36 @@
     margin: 0px auto;
 }
 
+//借款申请表单样式
+.panel-default{
+   .panel-heading {
+       line-height: 30px;
+       font-size: 20px;
+       .label-primary{
+           margin-left: 10px;
+       }
+   }
+   .panel-body{
+       form{
+           .titles{
+             width: 20%;
+             text-align: center; 
+           }
+           .types{
+            width: 80%;
+           }
+           .btnCenter{
+               width: 80%;
+               margin-left: 20%;
+           }
+       }
+   }
+}
+
 //引入导航样式
 @import url("sidebar.less");
+
+
 // 引入页脚
 @import url("footer.less");
 

@@ -119,7 +119,7 @@
     ?>
 
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./dist/js/index.min.js"></script>
+    <script src="./dist/js/p2p.min.js"></script>
     
 
     <!-- 切换显示或隐藏菜单 -->

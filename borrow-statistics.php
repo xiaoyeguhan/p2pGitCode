@@ -16,7 +16,7 @@
     <?php
       require_once('./header.php');
     ?>
-   
+   <!-- 内容 -->
    <div class="container">
         <div class="row">
             <!-- 左边 -->
@@ -45,7 +45,7 @@
       require_once('./footer.php');
     ?>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./dist/js/index.min.js"></script>
+    <script src="./dist/js/p2p.min.js"></script>
      <!-- 引入echarts库文件 -->
      <script src="./lib/echarts/echarts-all.js"></script>
      <!-- 报表js -->

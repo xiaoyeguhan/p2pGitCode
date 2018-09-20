@@ -28,7 +28,7 @@
         array_push($resultData,$rs);
     };
 
-    // "total": "212", "list": ""
+    //准备json数据
     $resultArr=["total"=> $total,"list"=> $resultData];
 
     //返回数据给前端
